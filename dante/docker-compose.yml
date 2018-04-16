@@ -8,12 +8,8 @@ services:
                 hostname: dante
                 container_name: dante
                 volumes:
-                        - /srv/dante/etc:/etc
+                        - ./etc:/etc
                 ports:
                         - "1080:1080"
                 network_mode: "host"
-                logging:
-                        driver: syslog
-                        options:
-                                tag: dante
                 restart: unless-stopped
