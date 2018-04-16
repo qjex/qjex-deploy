@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server>
+	<field port="9770" height="40" width="75" tick="80" food="1"/>
+	<field port="9769" height="40" width="75" tick="60" food="2"/>
+	<field port="9768" height="80" width="150" tick="70" food="3"/>
+</server>
