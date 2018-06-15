@@ -3,9 +3,9 @@ version: '3.1'
 services:
   db:
     image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD
     volumes:
       - /srv/mysql:/var/lib/mysql
-    env_file:
-      - vars.env
     ports:
       - "${HOST}:3306:3306"
